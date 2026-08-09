@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sites publicados por Cuca33.">
+<title>Cuca33</title>
+<style>
+  :root{
+    --bg:#f1f4f3; --panel:#fff; --ink:#171b1a; --muted:#616d69;
+    --line:#dce4e1; --brand:#0f7b6c; --brand-soft:#e2f0ed;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#121615; --panel:#1a201e; --ink:#e7ecea; --muted:#96a49f;
+      --line:#293130; --brand:#2fb3a0; --brand-soft:#153029;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#121615; --panel:#1a201e; --ink:#e7ecea; --muted:#96a49f;
+    --line:#293130; --brand:#2fb3a0; --brand-soft:#153029;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100vh; background:var(--bg); color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  main{max-width:460px; width:100%}
+  h1{font-size:24px; margin:0 0 4px; letter-spacing:-.01em}
+  p.sub{margin:0 0 22px; color:var(--muted); font-size:14.5px}
+  ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px}
+  a.item{
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    background:var(--panel); border:1px solid var(--line); border-radius:10px;
+    padding:14px 16px; text-decoration:none; color:var(--ink); font-weight:600; font-size:15.5px;
+  }
+  a.item:hover{border-color:var(--brand); background:var(--brand-soft)}
+  a.item:focus-visible{outline:2px solid var(--brand); outline-offset:2px}
+  a.item span{color:var(--muted); font-weight:400; font-size:13px; text-align:right}
+</style>
+</head>
+<body>
+<main>
+  <h1>Cuca33</h1>
+  <p class="sub">Sites publicados nesta conta.</p>
+  <ul>
+    <li><a class="item" href="/paraPedro/">Recibo Online <span>gerador de recibos</span></a></li>
+    <li><a class="item" href="/boteco-do-joao/">Boteco do João <span>cardápio</span></a></li>
+    <li><a class="item" href="/sabor-da-moqueca/">Sabor da Moqueca <span>cardápio</span></a></li>
+  </ul>
+</main>
+</body>
+</html>
